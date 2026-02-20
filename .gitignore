@@ -15,3 +15,4 @@ models/*
 *.tmp
 *.cache
 commands.txt
+sand_box.py
