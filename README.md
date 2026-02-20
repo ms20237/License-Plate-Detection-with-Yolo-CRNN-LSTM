@@ -8,7 +8,7 @@ The model is trained to recognize full license plate text directly from cropped 
 - [Models](#beginner-models)
 - [Repository Structure](#file_folder-repository-structure)
 - [Installation](#electric_plug-installation)
-- [Future Improvements](#construction-Future_Improvements)
+- [Future Improvements](#construction-Future Improvements)
 - [License](#lock-license)
 
 
