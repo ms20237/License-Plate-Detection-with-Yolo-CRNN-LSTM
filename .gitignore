@@ -2,6 +2,7 @@ __pycache__/
 .vscode/
 dataset/*
 !dataset/.gitkeep
+sand_box/
 
 videos/*
 !videos/.gitkeep

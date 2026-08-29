@@ -45,9 +45,21 @@ pip install torch torchvision matplotlib tqdm ultralytics
 - Or create a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+source venv/bin/activate            # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+for running convert script you have to do this:
+```bash
+python .\convert_indian_dataset_to_yolo_format.py --root_dataset_path  ".\dataset\Indian vehicle license plate dataset\State-wise_OLX"  --output_path ".\dataset\Indian_vehicle_license_plate_dataset_yolo_format"
+```
+change "--root_dataset_path" and "--output_path" to your real dataset and ourput path.
+
+and also for training model run this in you command:
+```bash
+python .\train_lstm_CRNN_model.py  --images_folder ".\dataset\Indian_vehicle_license_plate_dataset_yolo_format\images"   --labels_file ".\dataset\Indian_vehicle_license_plate_dataset_yolo_format\recognition_labels.txt"  --epochs 80   --val_split 0.15  --test_split 0.15
+```
+change "--image_folder" and "--labels_file" to your real dataset and ourput path  and for changing number of epochs and split parts change these arguments: "--epochs", "--val_split", "--test_split"
 
 ## :construction: Future Improvements
 - Beam Search decoding
