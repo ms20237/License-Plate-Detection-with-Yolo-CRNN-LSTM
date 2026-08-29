@@ -9,7 +9,7 @@ from utils import preprocess_plate, decode_predictions
 
 
 def init():
-    parser = argparse.ArgumentParser(description="Analyze Sqrt Area FiftyOne dataset.")
+    parser = argparse.ArgumentParser(description="YOLO + LSTM Plate Recognition")
     parser.add_argument('--detect_model_path',
                         type=str,
                         required=True,
