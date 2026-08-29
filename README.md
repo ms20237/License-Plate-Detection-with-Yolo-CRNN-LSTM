@@ -8,7 +8,7 @@ The model is trained to recognize full license plate text directly from cropped 
 - [Models](#beginner-models)
 - [Repository Structure](#file_folder-repository-structure)
 - [Installation](#electric_plug-installation)
-- [Future Improvements](#construction-Future_Improvements)
+- [Future Improvements](#construction-Future-Improvements)
 - [License](#lock-license)
 
 
@@ -20,7 +20,7 @@ and for letter recognization we use 2 datasets:
 - [colombia dataset example](https://github.com/ankandrew/fast-plate-ocr/releases/download/arg-plates/colombia_dataset_example.zip)
 
 
-## :beginner: Models
+## :gear: Models
 We use Yolo-v8s model for plate detection and then crop plate part and make some preprocess and then use CRNN/LSTM for recognizing letters and numbers.
 
 
